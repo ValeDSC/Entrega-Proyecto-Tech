@@ -1,0 +1,354 @@
+/* * Variables */
+:root {
+    --var: unset;
+}
+
+html {
+    margin: 0px;
+    scroll-behavior: unset;
+}
+
+body {
+    margin: 0px;
+    background-color: unset;
+    overflow-x: hidden;
+    scroll-behavior: unset;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerLeftSide {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    flex-flow: row nowrap;
+    justify-content: right;
+    align-items: center;
+}
+
+#login {
+    margin: 0px;
+    border: none;
+    background: none;
+    padding: 5px;
+    color:#000000;
+    text-decoration: none;
+}
+
+#signIn {
+    margin: 0px;
+    border: none;
+    background: none;
+    padding: 5px;
+    color:#000000;
+    text-decoration: none;
+}
+
+#cart {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 5px;
+    width: 40px;
+    color: #000000;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#nav_home {
+    padding: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+
+#nav_store {
+    padding: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+
+#nav_contact {
+    padding: 5px;
+    color: #000000;
+    text-decoration: none;
+}
+
+#frontImage {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+#frontImage img {
+    transition: opacity 0.5s ease-in-out;
+    width: 100%;
+}
+
+#front_text {
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: start;
+}
+
+#frontImage_subtitle {
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+    font-size: 20px;
+    text-shadow: white 0px 0px 10px;
+}
+
+#frontImage_title {
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+    font-size: 40px;
+    text-shadow: white 0px 0px 10px;
+}
+
+#frontImage_actionButton {
+    margin: 0px;
+    padding: 0px;
+    color: #000000;
+    font-size: 30px;
+    text-decoration: none;
+    text-shadow: white 0px 0px 10px;
+}
+
+#productListing {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: start;
+}
+
+#productListing article {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0px;
+}
+
+#productListing article img {
+    margin: 16px;
+    width: 45%;
+    min-width: 250px;
+}
+
+#productListing article p {
+    margin: 16px;
+    width: 45%;
+    min-width: 250px;
+}
+
+#productListing article:nth-child(even) img {
+    order: 1;
+}
+
+#signInForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+}
+
+#signInForm label {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#signInForm label span{
+    margin: 10px;
+}
+
+#signInForm input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+
+#signInForm button {
+    cursor: pointer;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    padding: 10px 20px;
+    color: white;
+}
+
+#signInForm button:hover {
+    background-color: #45a049;
+}
+
+#signInCard {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* margin: 30px auto; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+    padding: 20px;
+    width: 300px;
+}
+
+#cartList {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 60vh;
+}
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.cart-item img {
+    width: 110px;
+    height: 160px;
+    border-radius: 4px;
+}
+
+.cart-item div {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+
+.cart-item div * {
+    margin: 0px;
+    margin-top: 16px;
+}
+
+.cart-item button {
+    padding: 5px 10px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    align-self: flex-end;
+}
+
+.cart-item button:hover {
+    background-color: #ff4b4b;
+}
+
+.cart-total {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.cart-total button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart-total button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #dddddd;
+}
+
+#footer_contact {
+    margin: 0px;
+}
+
+#footer_leftSide {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#footer_leftSide span {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 30px;
+}
+
+/* * Desktop view ejecuta en la computadora*/
+@media only screen and (min-width: 130vh) {
+    body {
+        background-color: unset;
+    }
+}
+
+/* * Mobile view  adaptado para celular*/
+@media only screen and (min-height: 85vw) {
+    body {
+        background-color: unset;
+    }
+
+    header {
+        flex-flow: column wrap;
+    }
+
+    #headerLeftSide {
+        position: relative;
+        right: unset;
+    }
+
+    #productListing article p{
+        text-align: center;
+    }
+
+    #productListing article:nth-child(even) img {
+        order: unset;
+    }
+}
