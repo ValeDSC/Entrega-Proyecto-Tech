@@ -1,10 +1,10 @@
 window.onload = () => {
     let imgs = [
-        "../assets/imgs/main.webp",
-        "../assets/imgs/canelaTea.webp",
-        "../assets/imgs/mesaDeTe.webp",
-        "../assets/imgs/redTea.webp",
-        "../assets/imgs/teNaranja.webp"
+        "./assets/imgs/main.webp",
+        "./assets/imgs/canelaTea.webp",
+        "./assets/imgs/mesaDeTe.webp",
+        "./assets/imgs/redTea.webp",
+        "./assets/imgs/teNaranja.webp"
     ]
     let index = 0
     let frontImage = document.querySelectorAll("#frontImage img")[0]

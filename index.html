@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria - Valenska Tienda de Té</title>
-    <link rel="shortcut icon" href="../favicon.ico" type="image/x- icon">
-    <link rel="stylesheet" href="../css/estilo.css">
-    <script src="../js/main.js"></script>
+    <title>Inicio - Valenska Tienda de Té</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x- icon">
+    <link rel="stylesheet" href="./css/estilo.css">
+    <script src="./js/main.js"></script>
 </head>
 
 <body>
     <header id="header">
         <h1 id="title">Valenska</h1>
         <span id="headerLeftSide">
-            <a href="./login.html" id="login">INICIAR SESIÓN</a>
-            <a href="./signIn.html" id="signIn">CREAR CUENTA</a>
-            <a href="./cart.html" id="cart">
+            <a href="./pages/login.html" id="login">INICIAR SESIÓN</a>
+            <a href="./pages/signIn.html" id="signIn">CREAR CUENTA</a>
+            <a href="./pages/cart.html" id="cart">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -26,51 +26,45 @@
         </span>
     </header>
     <nav>
-        <a href="../index.html" id="nav_home">HOME</a>
-        <a href="./galery.html" id="nav_store">GALERÍA</a>
-        <a href="./contact.html" id="nav_contact">CONTACTO</a>
+        <a href="./index.html" id="nav_home">HOME</a>
+        <a href="./pages/galery.html" id="nav_store">GALERÍA</a>
+        <a href="./pages/contact.html" id="nav_contact">CONTACTO</a>
     </nav>
     <main>
+        <section id="frontImage">
+            <img src="./assets/imgs/main.webp" alt="big image">
+            <span id="front_text">
+                <h3 id="frontImage_subtitle"> Nos especializamos en la preparación y servicio de té.</h3>
+                <h2 id="frontImage_title">Valenska</h2>
+                <a href="./galery.html" id="frontImage_actionButton">Ver Productos:</a>
+            </span>
+        </section>
         <section id="productListing">
             <article>
-                <img src="../assets/imgs/lemmonTea.webp" alt="Té de Limon">
+                <img src="./assets/imgs/lemmonTea.webp" alt="Té de Limon">
                 <p>El té de limón es una infusión refrescante y cítrica, rica en vitamina C y antioxidantes. Ayuda a
                     fortalecer el sistema inmunológico, facilita la digestión y mejora el estado de ánimo. Ideal tanto
                     caliente como frío, es una opción revitalizante para cualquier momento del día.</p>
             </article>
             <article>
-                <img src="../assets/imgs/redTea.webp" alt="Té de Rojo">
+                <img src="./assets/imgs/redTea.webp" alt="Té de Rojo">
                 <p>El té rojo, conocido también como Pu-erh, es una infusión fermentada de sabor terroso y suave.
                     Popular
                     por sus propiedades para apoyar la digestión y favorecer el metabolismo, es una bebida ideal para
                     después de las comidas. Además, es valorado por su efecto energizante y desintoxicante natural.</p>
             </article>
             <article>
-                <img src="../assets/imgs/canelaTea.webp" alt="Té de Canela">
+                <img src="./assets/imgs/canelaTea.webp" alt="Té de Canela">
                 <p>El té de canela es una infusión aromática y cálida con propiedades digestivas y antiinflamatorias. Su
                     sabor dulce y especiado lo convierte en una bebida reconfortante, ideal para aliviar el estrés y
                     mejorar
                     la circulación. Perfecto para consumir en épocas frías y complementar una dieta saludable.</p>
             </article>
-            <article>
-                <img src="../assets/imgs/preparandoTe.webp" alt="Té de Chai">
-                <p>El té de chai es un tipo de té tradicional en la India. Se prepara con una mezcla de especias, como
-                    canela, cardamomo y
-                    jengibre, que se combinan con té negro y se toman muy caliente, generalmente con leche y azúcar.</p>
-            </article>
-            <article>
-                <img src="../assets/imgs/teNaranja.webp" alt="Té de Maracuyá">
-                <p>El té de maracuyá es un té herbal que se obtiene de las flores y hojas de la planta de maracuyá. Se
-                    cree
-                    que tiene propiedades ansiolíticas, sedantes y antiinflamatorias, y se utiliza para reducir la
-                    ansiedad,
-                    el estrés y el dolor.</p>
-            </article>
         </section>
     </main>
     <footer>
         <p id="footer_contact"><strong>Dirección: Saavedra 359, Lomas de Zamora.</strong></p>
-        <p id="footer_contact"> <strong>Gmail: valenska777@gmail.com</strong></p>
+        <p id="footer_contact"><strong>Gmail: valenska777@gmail</strong></p>
         <span id="footer_leftSide">
             <span id="instagram_link">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
